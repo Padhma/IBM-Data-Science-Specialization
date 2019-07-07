@@ -1,0 +1,44 @@
+Data Science Methodology:
+
+1. Which topic did you choose to apply the data science methodology to?
+Hospitals
+
+2. Next, you will play the role of the client and the data scientist.
+
+Using the topic that you selected, complete the Business Understanding stage by coming up with a problem that you would like to solve and phrasing it in the form of a question that you will use data to answer. (3 marks)
+
+You are required to:
+
+Describe the problem, related to the topic you selected.
+Phrase the problem as a question to be answered using data.
+For example, using the food recipes use case discussed in the labs, the question that we defined was, "Can we automatically determine the cuisine of a given dish based on its ingredients?".
+
+Problem:
+        Given the increase in population every day across the world, the outbreak of diseases also increases gradually and the hospitals are also in need of increased staffing to face the situation. Some infections may need to be continuously monitored by a nurse/attendant based on severity while others can be cured just by medications. Hence, the problem is to identify the staffing requirements in a hospital based on the data given about the patients.
+
+Question:
+        Can we automatically determine which type of diseases requires more staff assistance based on the symptoms of the disease?
+
+3. Briefly explain how you would complete each of the following stages for the problem that you described in the Business Understanding stage, so that you are ultimately able to answer the question that you came up with. (5 marks):
+
+Analytic Approach
+Data Requirements
+Data Collection
+Data Understanding and Preparation
+Modeling and Evaluation
+You can always refer to the labs as a reference with describing how you would complete each stage for your problem.
+
+1. Analytic Approach: 
+A decision tree classification model can be used for this case which can be used to identify the combination of symptoms which needs assistance to each patient. From this, the risk of each disease can be predicted where the nodes can lead to yes for an assistance requirement and no for non-assistance.
+
+2. Data Requirements: 
+The data requirements process involves collecting data that is relevant to the current scenario. Hence the following type of data is taken into consideration. First, the patient has to be an in-patient as outpatients don't require much assistance. Next, the patient has to be admitted for a long period (say, at least a week). Next, the data of the emergency ward patients where there can be unexpected assistance.
+
+3. Data Collection: 
+The data can be obtained from various sources such as clinical records of a patient, demographic coverage of patients, hospital records about the staffs(based on full-time or part-time).
+
+4. Data Understanding and Preparation:
+The Data Understanding stage involves identifying the symptoms of a disease and its severity. Based on a few symptoms such as coughing blood, high fever we can say that disease can be cancer or AIDS and can require more attention. The Data can be prepared by ignoring the missing values initially, removing redundancy in the data. Data Columns can be made for symptoms against staffing.
+
+5. Modeling and Evaluation:
+If a patient may not require assistance but the model can predict assistance then it's a false positive error whereas patient may require assistance but the model does not predict assistance, it can be a fatal situation. Hence, a model which has an overall specificity of 82% with 80% yes (assistance required) and 5% no (assistance required), it can be considered as an optimal model. The evaluation can be done based on false positives as they're riskier and by returning to the data understanding stage.
