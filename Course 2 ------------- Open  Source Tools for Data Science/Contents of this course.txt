@@ -1,0 +1,7 @@
+This course contains introduction and tutorial to some of the open source tools such as
+	* Jupyter Notebook
+	* Zeppelin Notebook
+	* RStudio IDE
+	* IBM Watson Studion
+
+Jupyter Notebook, Zeppelin Notebook, RStudio IDE were accessed on cloud through IBM Developer Skills Network whereas watson studio was accessed through IBM cloud.
