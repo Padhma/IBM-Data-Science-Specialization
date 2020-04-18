@@ -11,3 +11,5 @@
   * Data Visualization with Python
   * Machine Learning with Python
   * Applied Data Science Capstone
+
+![Certificate](https://github.com/Padhma/IBM-Data-Science-Specialization/blob/master/images/certificate.jpg)
